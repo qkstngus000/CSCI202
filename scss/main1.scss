@@ -1,0 +1,60 @@
+/*
+Stylesheet for CS202
+* version 1.1
+*last modified: 9.28.2020
+*Author: Michael Ban
+*email: bans@wwu.edu
+*website: bans.com/// lesson.html
+*/
+
+// import scss
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// import partial
+@import "button";
+
+// scss variables $sign is variable
+$primary: #05a081;
+$margin: 22px;
+
+body{
+    background-color: #fff3f0;
+
+    //font-family: Arial;
+    //font-style: italic;
+    //font-size: 18px;
+    //font-weight: bold;
+    //line-height: 200%;
+    //text-transform: uppercase;
+
+    //font shorthand
+    //font: italic bold 18px/200% Arial
+
+    //nesting properties
+    font: {
+        family: Arial;
+        style: regular;
+        weight: light;
+        size: 18px; 
+    }
+}
+h2, h3 {
+    color: $primary;
+}
+
+//nesting elements
+nav{
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: $primary;
+        font-weight: bold;
+        display: inline-block;
+        padding: 1em 2em;
+        font: {
+            weiht: bold;
+            size: 18px;
+            margin: $margin/2;
+        }
+    }
+}
